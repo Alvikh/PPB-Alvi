@@ -1,0 +1,127 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 243, 186, 186),
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 246, 106, 106),
+          title: Text(
+            'Alvi Khoirunnisa',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+          centerTitle: true,
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Kotak di atas
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 30.0), 
+                  child: Container(
+                    width: 80.0,
+                    height: 80.0,
+                    color: Color.fromARGB(255, 236, 53, 133),
+                    child: Center(
+                      child: Text('Alvi',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Spacer(), // Memberikan ruang di tengah container merah dan hijau
+                Padding(
+                  padding: EdgeInsets.only(right: 30.0), 
+                  child: Container(
+                    width: 80.0,
+                    height: 80.0,
+                    color: Color.fromARGB(255, 130, 42, 71),
+                    child: Center(
+                      child: Text('Alvi',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 40.0), // Ruang di antara baris
+            // Kotak kuning di tengah-tengah
+            Container(
+              width: 80.0,
+              height: 80.0,
+              color: Color.fromARGB(255, 153, 93, 93),
+              child: Center(
+                      child: Text('Alvi',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                        ),
+                      ),
+                    ),
+            ),
+            SizedBox(height: 40.0), // Ruang di antara baris
+            // Kotak di bawah
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 30.0), 
+                  child: Container(
+                    width: 80.0,
+                    height: 80.0,
+                    color: Color.fromARGB(255, 170, 177, 242),
+                    child: Center(
+                      child: Text('Alvi',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Spacer(), // Memberikan ruang di tengah container merah dan hijau
+                Padding(
+                  padding: EdgeInsets.only(right: 30.0), 
+                  child: Container(
+                    width: 80.0,
+                    height: 80.0,
+                    color: Color.fromARGB(255, 184, 129, 252),
+                    child: Center(
+                      child: Text('Alvi',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
